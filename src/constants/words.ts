@@ -1,4 +1,4 @@
-[
+const words = [
     "abandon", "beacon", "candy", "dove", "eagle", "flame", "grape", "happy", "ice", "jungle",
     "kingdom", "lunar", "mango", "noble", "ocean", "petal", "quest", "river", "shadow", "train",
     "umbrella", "vivid", "whale", "basket", "yellow", "zebra", "angel", "brave", "crane", "dusk",
@@ -25,4 +25,6 @@
     "core", "dove", "eagle", "foam", "gloom", "hand", "ice", "joke", "knee", "loaf",
     "melt", "note", "open", "pale", "quill", "roar", "slug", "tear", "urge", "blank",
     "wait", "yawn", "zinc"
-]
+];
+
+export { words }
