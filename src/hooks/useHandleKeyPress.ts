@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 
 const useHandleKeyPress = (
   typingStarted: boolean,
-  setTypingStarted: any,
+  setTypingStarted: (typingStarted: boolean) => void,
   timeLeft: number,
   setTimeLeft: (timeLeft: number) => void,
   totalTyped: string,
