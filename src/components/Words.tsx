@@ -1,3 +1,4 @@
+import {isMobileDevice} from "@/utils/isMobileDevice"
 import type { FC } from "react"
 
 interface WordsProps {
@@ -6,7 +7,10 @@ interface WordsProps {
 }
 
 const Words: FC<WordsProps> = ({ textArray, totalTyped }) => {
-    console.log('textArray: ', textArray)
+
+    if (isMobileDevice()) {
+        return 'Desktop Only'
+    }
 
     return (
         <>
