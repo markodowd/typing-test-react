@@ -7,7 +7,7 @@ import { TextContainer } from './components/TextContainer'
 import { FinalScore } from './components/FinalScore'
 import { Timer } from './components/Timer'
 import { TryAgain } from './components/TryAgain'
-import {GAME_TIME} from './constants/constants'
+import { GAME_TIME } from './constants/constants'
 
 const App = () => {
   const [totalTyped, setTotalTyped] = useState('')

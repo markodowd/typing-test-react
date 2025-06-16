@@ -14,9 +14,11 @@ const Words: FC<WordsProps> = ({ textArray, totalTyped }) => {
   return (
     <>
       {textArray.map((item, index) => {
-        return <span className={`min-w-3 ${totalTyped[index] && totalTyped[index] !== item ? 'text-red-500' : totalTyped[index] === item ? 'text-green-500' : ''}`}>
-        {item}
-        </span>
+        return (
+          <span className={`min-w-3 ${totalTyped[index] && totalTyped[index] !== item ? 'text-red-500' : totalTyped[index] === item ? 'text-green-500' : ''}`}>
+            {item}
+          </span>
+        )
       }
       )}
     </>

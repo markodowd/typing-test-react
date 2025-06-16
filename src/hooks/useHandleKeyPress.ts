@@ -1,4 +1,4 @@
-import {GAME_TIME} from '@/constants/constants'
+import { GAME_TIME } from '@/constants/constants'
 import { useEffect } from 'react'
 
 const useHandleKeyPress = (
