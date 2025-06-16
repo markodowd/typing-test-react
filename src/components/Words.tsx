@@ -1,33 +1,26 @@
-import {isMobileDevice} from "@/utils/isMobileDevice"
-import type { FC } from "react"
+import type { FC } from 'react'
+import { isMobileDevice } from '@/utils/isMobileDevice'
 
 interface WordsProps {
-    textArray: string[]
-    totalTyped: string
+  textArray: string[]
+  totalTyped: string
 }
 
 const Words: FC<WordsProps> = ({ textArray, totalTyped }) => {
+  if (isMobileDevice()) {
+    return 'Desktop Only'
+  }
 
-    if (isMobileDevice()) {
-        return 'Desktop Only'
-    }
-
-    return (
-        <>
-        {textArray.map((item, index) => {
-            if (totalTyped[index] === item) {
-                return <span className="text-green-500">{item}</span>
-            }
-
-            if (totalTyped[index] && totalTyped[index] !== item) {
-                return <span className="text-red-500">{item}</span>
-            }
-
-            return <span>{item}</span>
-        }
-                      )}
-                      </>
-    )
+  return (
+    <>
+      {textArray.map((item, index) => {
+        return <span className={`min-w-3 ${totalTyped[index] && totalTyped[index] !== item ? 'text-red-500' : totalTyped[index] === item ? 'text-green-500' : ''}`}>
+        {item}
+        </span>
+      }
+      )}
+    </>
+  )
 }
 
 export { Words }

@@ -6,12 +6,8 @@
   }
 
   body {
-      @apply font-mono text-2xl flex flex-col justify-center items-center h-screen overflow-hidden;
+      @apply bg-gray-100 font-mono text-2xl flex flex-col justify-center items-center h-screen overflow-hidden;
   }
-}
-
-body {
-    background: whitesmoke;
 }
 
 #text-container {
@@ -30,10 +26,6 @@ body {
     cursor: none;
 }
 
-#timer {
-    font-size: 1.2rem;
-}
-
 button {
     width: 150px;
     background: rgb(43, 43, 43);
@@ -44,13 +36,5 @@ button {
 
 span {
     min-width: 14px;
-}
-
-.correct {
-    color: green;
-}
-
-.error {
-    color: red;
 }
 
