@@ -1,1 +1,1 @@
-export const GAME_TIME = 3;
+export const GAME_TIME = 3

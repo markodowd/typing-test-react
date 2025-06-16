@@ -1,11 +1,11 @@
-import type { FC } from "react";
+import type { FC } from 'react'
 
 interface TimerProps {
-  timeLeft: number;
+  timeLeft: number
 }
 
 const Timer: FC<TimerProps> = ({ timeLeft }) => (
   <div>{timeLeft <= 0 ? "Time's Up!" : `Time left: ${timeLeft}s`}</div>
-);
+)
 
-export { Timer };
+export { Timer }

@@ -1,9 +1,9 @@
-import { words } from "@/constants/words";
-import { shuffleWords } from "./shuffleWords";
+import { words } from '@/constants/words'
+import { shuffleWords } from './shuffleWords'
 
 const generateLongText = () => {
-  const shuffledWords = shuffleWords([...words]);
-  return shuffledWords.join(" ");
-};
+  const shuffledWords = shuffleWords([...words])
+  return shuffledWords.join(' ')
+}
 
-export { generateLongText };
+export { generateLongText }

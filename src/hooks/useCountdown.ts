@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect } from 'react'
 
 const useCountdown = (
   typingStarted: boolean,
@@ -10,17 +10,17 @@ const useCountdown = (
   useEffect(() => {
     if (typingStarted && timeLeft > 0) {
       timerIntervalRef.current = setInterval(() => {
-        setTimeLeft(timeLeft - 1);
-      }, 1000);
+        setTimeLeft(timeLeft - 1)
+      }, 1000)
     } else if (timeLeft === 0) {
-      clearInterval(timerIntervalRef.current);
-      setTypingStarted(false);
+      clearInterval(timerIntervalRef.current)
+      setTypingStarted(false)
     }
 
     return () => {
-      clearInterval(timerIntervalRef.current);
-    };
-  }, [typingStarted, timeLeft]);
-};
+      clearInterval(timerIntervalRef.current)
+    }
+  }, [typingStarted, timeLeft])
+}
 
-export { useCountdown };
+export { useCountdown }
