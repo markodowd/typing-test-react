@@ -1,15 +1,17 @@
-import type { FC } from 'react'
+import type { FC } from "react";
 
 interface TryAgainProps {
-  onClick: any
+  onClick: () => void;
 }
 
 const TryAgain: FC<TryAgainProps> = ({ onClick }) => (
   <button
-    type='button' id='try-again' className='p-2.5 rounded-lg hover:brightness-125 mt-5 cursor-pointer'
+    type="button"
+    className="w-40 bg-black text-white border-none p-2.5 rounded-lg hover:brightness-125 cursor-pointer text-xl"
     onClick={onClick}
-  >Try Again
+  >
+    Try Again
   </button>
-)
+);
 
-export { TryAgain }
+export { TryAgain };
