@@ -1,6 +1,6 @@
 # Typing Test (React) 
 
-Converted [Jacinto Design's Typing Test](https://github.com/JacintoDesign/typing-test) project from the ZTM Course: [Advanced CSS & JavaScript Projects](https://academy.zerotomastery.io/courses/enrolled/2658540) to React (bun)
+Converted [Jacinto Design's Typing Test](https://github.com/JacintoDesign/typing-test) project from the ZTM Course: [Advanced CSS & JavaScript Projects](https://academy.zerotomastery.io/courses/enrolled/2658540) to React (Bun) with TypeScript & Tailwind
 
 Live Demo: [Click Here](https://markodowd.github.io/typing-test-react/)
 
