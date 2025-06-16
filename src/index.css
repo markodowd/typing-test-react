@@ -1,17 +1,16 @@
+@import "tailwindcss";
 
-html {
-    box-sizing: border-box;
+@layer base {
+  :root {
+      @apply box-border;
+  }
+
+  body {
+      @apply font-mono text-2xl flex flex-col justify-center items-center h-screen overflow-hidden;
+  }
 }
 
 body {
-    font-family: monospace; 
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
     background: whitesmoke;
 }
 
@@ -32,25 +31,15 @@ body {
 }
 
 #timer {
-    margin: 10px;
     font-size: 1.2rem;
 }
 
 button {
-    padding: 10px;
     width: 150px;
     background: rgb(43, 43, 43);
     color: white;
-    border-radius: 8px;
     border: none;
-    cursor: pointer;
-    margin-top: 20px;
     font-size: 1.2rem;
-    display: none;
-}
-
-button:hover {
-    filter: brightness(1.2);
 }
 
 span {
@@ -64,3 +53,4 @@ span {
 .error {
     color: red;
 }
+
